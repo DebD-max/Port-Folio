@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #2a2a72; /* Dark blue shade */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #dcdcdc;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #dcdcdc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff9800; /* Orange color for hover effect */
+}
+
+/* Container for Sections */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Section Styles */
+section {
+    padding: 3rem 0;
+    background: #fff;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2a2a72;
+    border-bottom: 2px solid #ff9800;
+    display: inline-block;
+}
+
+/* Project Cards */
+.project {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #2a2a72;
+    font-size: 1.5rem;
+}
+
+.project p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0.5rem 0 1rem;
+}
+
+.project .btn {
+    display: inline-block;
+    background: #2a2a72;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.project .btn:hover {
+    background: #ff9800; /* Change to orange on hover */
+}
+
+/* Skills Section */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skills-list li {
+    background: #2a2a72;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact p a {
+    color: #2a2a72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact p a:hover {
+    color: #ff9800;
+}
+
+/* Footer Styles */
+footer {
+    background: #2a2a72;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
